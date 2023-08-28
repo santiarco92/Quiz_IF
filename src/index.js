@@ -248,12 +248,10 @@ if (settings.theme !== "red") {
 };
 
 
-
 /**
  * Question 25
- * If userData has a hasBonus property and its value is true, set result to the sum of result and the score property of userData.
+ * If userData has a hasBonus property and its value is true, set result to the sum of result and the score property of userData,
  */
-
 
 if (userData.hasBonus && userData.hasBonus === true) {
     result += userData.score
