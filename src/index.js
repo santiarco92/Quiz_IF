@@ -14,12 +14,16 @@
 
 const initialValue = 10;
 
+console.log("question 1 " + initialValue);
+
 /**
  * Question 2
  * Declare a let variable named result and set its initial value to 0.
  */
 
 let result = 0;
+
+console.log("question 2 " + result);
 
 /**
  * Question 3
@@ -30,6 +34,7 @@ if (initialValue > 5) {
     result = (initialValue * 2);
 };
 
+console.log("question 3 " + result);
 
 /**
  * Question 4
@@ -37,6 +42,8 @@ if (initialValue > 5) {
  */
 
 let numbers = [1, 3, 4, 5, 7];
+
+console.log("question 4 " + numbers);
 
 /**
  * Question 5
@@ -46,6 +53,9 @@ let numbers = [1, 3, 4, 5, 7];
 if (numbers [4] > initialValue) {
     result += 5
 };
+
+
+console.log("question 5 " + result);
 
 /**
  * Question 6
@@ -57,6 +67,7 @@ let settings = {
     notifications: true,
 };
 
+console.log("question 6 " + settings);
 
 /**
  * Question 7
@@ -67,7 +78,7 @@ if (notification === true) {
     result += 3
 };
 
-
+console.log("question 7 " + result);
 /**
  * Question: 8
  * Change the theme property of settings to "dark".
@@ -75,6 +86,7 @@ if (notification === true) {
 
 settings.theme = "dark";
 
+console.log("question 8 " + settings);
 
 /**
  * Question: 9
@@ -85,7 +97,7 @@ if (settings.theme === "dark" && result < 30) {
     numbers.push (13)
 };
 
-
+console.log("question 9 " + numbers);
 
 /**
  * Question: 10
@@ -95,6 +107,7 @@ if (settings.theme === "dark" && result < 30) {
 
 let index = 4;
 
+console.log("question 10 " + index);
 
 /**
  * Question: 11
@@ -107,6 +120,8 @@ if (numbers [index] === 7) {
 };
 
 
+console.log("question 11 " + result);
+
 /**
  * Question 12
  * Change the value of index to the first position in the numbers array that has a value of 13.
@@ -114,6 +129,8 @@ if (numbers [index] === 7) {
 
 
 index = numbers [5];
+
+console.log("question 12 " + index);
 
 
 /**
@@ -126,6 +143,7 @@ if (index % 2 === 0 ) {
     settings.notifications = false
 };
 
+console.log("question 13 " + settings.notifications);
 
 /**
  * Question 14
@@ -137,6 +155,8 @@ if (settings.notifications === false) {
     result -= initialValue
 };
 
+
+console.log("question 14 " + result);
 
 /**
  * Question 15
@@ -150,6 +170,8 @@ if ( (initialValue - result) < 0 ) {
 };
 
 
+console.log("question 15 " + numbers);
+
 /**
  * Question 16
  * If the numbers array contains more than 7 elements, update the theme property of settings to "blue".
@@ -161,6 +183,8 @@ if ( numbers.length > 7) {
 };
 
 
+console.log("question 16 " + settings.theme);
+
 /**
  * Question 17
  * Declare a const named multiplier with a value of 5.
@@ -170,7 +194,7 @@ if ( numbers.length > 7) {
 const multiplier = 5;
 
 
-
+console.log("question 17 " + multiplier);
 /**
  * Question 18
  * If the multiplier is a multiple of initialValue, assign the product of multiplier and result to result.
@@ -181,6 +205,7 @@ if (multiplier % initialValue) {
     result*= multiplier
 };
 
+console.log("question 18 " + result);
 
 /**
  * Question 19
@@ -193,6 +218,8 @@ let userData = {
     score: result,
 };
 
+console.log("question 19 " + userData);
+
 /**
  * Question 20
  * If score is greater than 50, add a new property to userData named membership and set its value to "gold".
@@ -203,6 +230,7 @@ if (userData.score > 50) {
     userData.membership = "gold"
 };
 
+console.log("question 20 " + userData.membership);
 
 
 /**
@@ -215,6 +243,7 @@ if (userData.name.startsWith("A")) {
 userData.score += 10
 };
 
+console.log("question 21 " + userData.score);
 
 
 /**
@@ -224,6 +253,8 @@ userData.score += 10
 
 
 numbers.push (userData.score);
+
+console.log("question 22 " + numbers);
 
 
 
@@ -237,6 +268,8 @@ if (numbers[numbers.length - 1] % 2 !== 0){
     userData.hasBonus = true
 };
 
+console.log("question 23 " + userData.hasBonus);
+
 /**
  * Question 24
  * If settings.theme is not "red", add 15 to the score property of userData.
@@ -248,6 +281,9 @@ if (settings.theme !== "red") {
 };
 
 
+console.log("question 24 " + userData.score);
+
+
 /**
  * Question 25
  * If userData has a hasBonus property and its value is true, set result to the sum of result and the score property of userData,
@@ -256,3 +292,5 @@ if (settings.theme !== "red") {
 if (userData.hasBonus && userData.hasBonus === true) {
     result += userData.score
 };
+
+console.log("question 25 " + result);
