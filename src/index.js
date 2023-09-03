@@ -14,7 +14,7 @@
 
 const initialValue = 10;
 
-console.log("question 1 " + initialValue);
+console.log("question 1 ", initialValue);
 
 /**
  * Question 2
@@ -23,7 +23,7 @@ console.log("question 1 " + initialValue);
 
 let result = 0;
 
-console.log("question 2 " + result);
+console.log("question 2 ", result);
 
 /**
  * Question 3
@@ -34,16 +34,16 @@ if (initialValue > 5) {
     result = (initialValue * 2);
 };
 
-console.log("question 3 " + result);
+console.log("question 3 ", result);
 
 /**
  * Question 4
  * Declare an array named numbers containing the first five prime numbers.
  */
 
-let numbers = [1, 3, 4, 5, 7];
+let numbers = [2, 3, 5, 7, 11];
 
-console.log("question 4 " + numbers);
+console.log("question 4 ", numbers);
 
 /**
  * Question 5
@@ -55,7 +55,7 @@ if (numbers [4] > initialValue) {
 };
 
 
-console.log("question 5 " + result);
+console.log("question 5 ", result);
 
 /**
  * Question 6
@@ -67,18 +67,18 @@ let settings = {
     notifications: true,
 };
 
-console.log("question 6 " + settings);
+console.log("question 6 ", settings);
 
 /**
  * Question 7
  * Using an if statement, if notifications property is true, add 3 to result.
  */
 
-if (notification === true) {
+if (settings.notifications === true) {
     result += 3
 };
 
-console.log("question 7 " + result);
+console.log("question 7 ", result);
 /**
  * Question: 8
  * Change the theme property of settings to "dark".
@@ -86,7 +86,7 @@ console.log("question 7 " + result);
 
 settings.theme = "dark";
 
-console.log("question 8 " + settings);
+console.log("question 8 ", settings);
 
 /**
  * Question: 9
@@ -97,7 +97,7 @@ if (settings.theme === "dark" && result < 30) {
     numbers.push (13)
 };
 
-console.log("question 9 " + numbers);
+console.log("question 9 ", numbers);
 
 /**
  * Question: 10
@@ -107,7 +107,7 @@ console.log("question 9 " + numbers);
 
 let index = 4;
 
-console.log("question 10 " + index);
+console.log("question 10 ", index);
 
 /**
  * Question: 11
@@ -120,7 +120,7 @@ if (numbers [index] === 7) {
 };
 
 
-console.log("question 11 " + result);
+console.log("question 11 ", result);
 
 /**
  * Question 12
@@ -128,9 +128,9 @@ console.log("question 11 " + result);
  */
 
 
-index = numbers [5];
+index = numbers.indexOf(13);
 
-console.log("question 12 " + index);
+console.log("question 12 ", index);
 
 
 /**
@@ -139,11 +139,11 @@ console.log("question 12 " + index);
  */
 
 
-if (index % 2 === 0 ) {
+if (index % 2 === 1 ) {
     settings.notifications = false
 };
 
-console.log("question 13 " + settings.notifications);
+console.log("question 13 ", settings.notifications);
 
 /**
  * Question 14
@@ -156,7 +156,7 @@ if (settings.notifications === false) {
 };
 
 
-console.log("question 14 " + result);
+console.log("question 14 ", result);
 
 /**
  * Question 15
@@ -164,13 +164,13 @@ console.log("question 14 " + result);
  */
 
 
-if ( (initialValue - result) < 0 ) {
+if ( (initialValue - result) < 10 ) {
 
     numbers.push (0, 0, 0)
 };
 
 
-console.log("question 15 " + numbers);
+console.log("question 15 ", numbers);
 
 /**
  * Question 16
@@ -183,7 +183,7 @@ if ( numbers.length > 7) {
 };
 
 
-console.log("question 16 " + settings.theme);
+console.log("question 16 ", settings.theme);
 
 /**
  * Question 17
@@ -194,7 +194,7 @@ console.log("question 16 " + settings.theme);
 const multiplier = 5;
 
 
-console.log("question 17 " + multiplier);
+console.log("question 17 ", multiplier);
 /**
  * Question 18
  * If the multiplier is a multiple of initialValue, assign the product of multiplier and result to result.
@@ -202,10 +202,10 @@ console.log("question 17 " + multiplier);
 
 
 if (multiplier % initialValue) {
-    result*= multiplier
+    result = multiplier * result
 };
 
-console.log("question 18 " + result);
+console.log("question 18 ", result);
 
 /**
  * Question 19
@@ -218,7 +218,7 @@ let userData = {
     score: result,
 };
 
-console.log("question 19 " + userData);
+console.log("question 19 ", userData);
 
 /**
  * Question 20
@@ -230,7 +230,7 @@ if (userData.score > 50) {
     userData.membership = "gold"
 };
 
-console.log("question 20 " + userData.membership);
+console.log("question 20 ", userData.membership);
 
 
 /**
@@ -243,7 +243,7 @@ if (userData.name.startsWith("A")) {
 userData.score += 10
 };
 
-console.log("question 21 " + userData.score);
+console.log("question 21 ", userData.score);
 
 
 /**
@@ -254,7 +254,7 @@ console.log("question 21 " + userData.score);
 
 numbers.push (userData.score);
 
-console.log("question 22 " + numbers);
+console.log("question 22 ", numbers);
 
 
 
@@ -268,7 +268,7 @@ if (numbers[numbers.length - 1] % 2 !== 0){
     userData.hasBonus = true
 };
 
-console.log("question 23 " + userData.hasBonus);
+console.log("question 23 ", userData.hasBonus);
 
 /**
  * Question 24
@@ -281,7 +281,7 @@ if (settings.theme !== "red") {
 };
 
 
-console.log("question 24 " + userData.score);
+console.log("question 24 ", userData.score);
 
 
 /**
@@ -293,4 +293,4 @@ if (userData.hasBonus && userData.hasBonus === true) {
     result += userData.score
 };
 
-console.log("question 25 " + result);
+console.log("question 25 ", result);
